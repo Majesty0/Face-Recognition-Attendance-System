@@ -1,5 +1,3 @@
-# System Workflow
-
 ```text
 Camera
     │
@@ -54,5 +52,5 @@ Attendance Report
 7. **Known Person?**
    - **Yes:** Record attendance.
    - **No:** Mark as unknown.
-8. Generate the **Attendance Report**.
+8. Generate the **Attendance Report**
 ```
