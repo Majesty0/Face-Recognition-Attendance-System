@@ -20,8 +20,14 @@ import pandas as pd
 # Student Details
 # -------------------------------------------------------
 
-student_id = input("Enter Student ID: ").strip()
-student_name = input("Enter Student Name: ").strip()
+import sys
+
+if len(sys.argv) >= 3:
+    student_id = sys.argv[1]
+    student_name = sys.argv[2]
+else:
+    student_id = input("Enter Student ID: ").strip()
+    student_name = input("Enter Student Name: ").strip()
 
 folder_name = f"{student_name}_{student_id}"
 

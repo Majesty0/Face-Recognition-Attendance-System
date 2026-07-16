@@ -21,8 +21,7 @@ from sklearn.metrics import (
     recall_score,
     f1_score,
     classification_report,
-)
-
+    )
 # -------------------------------------------------------
 # Paths
 # -------------------------------------------------------
@@ -71,14 +70,39 @@ X_test = scaler.transform(X_test)
 # Train SVM
 # -------------------------------------------------------
 
-model = SVC(
-    kernel="rbf",
-    C=10,
-    gamma="scale",
-    probability=True
+from sklearn.model_selection import GridSearchCV
+
+param_grid = {
+    "C": [0.1, 1, 5, 10, 20, 50, 100],
+    "gamma": [1, 0.1, 0.01, 0.001, "scale"],
+    "kernel": ["rbf"]
+}
+
+grid = GridSearchCV(
+    estimator=SVC(probability=True),
+    param_grid=param_grid,
+    cv=5,
+    scoring="accuracy",
+    n_jobs=-1
 )
 
+grid.fit(X_train, y_train)
+
+from sklearn.svm import SVC
+from sklearn.calibration import CalibratedClassifierCV
+
+best_svm = SVC(
+    kernel=grid.best_params_["kernel"],
+    C=grid.best_params_["C"],
+    gamma=grid.best_params_["gamma"]
+)
+
+model = CalibratedClassifierCV(best_svm, cv=5)
+
 model.fit(X_train, y_train)
+
+print("\nBest Parameters")
+print(grid.best_params_)
 
 # -------------------------------------------------------
 # Prediction

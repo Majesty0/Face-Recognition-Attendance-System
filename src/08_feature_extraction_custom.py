@@ -50,11 +50,12 @@ for student in sorted(os.listdir(INPUT_PATH)):
         image = cv2.equalizeHist(image)
 
         features = hog(
-            image,
-            orientations=9,
-            pixels_per_cell=(8, 8),
-            cells_per_block=(2, 2),
+        image,
+            orientations=12,
+            pixels_per_cell=(8,8),
+            cells_per_block=(2,2),
             block_norm="L2-Hys",
+            transform_sqrt=True,
             visualize=False
         )
 
