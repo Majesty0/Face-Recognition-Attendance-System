@@ -312,7 +312,7 @@ F1 Score  : 96.73%
 
 
 
-## Getting Started
+## Getting Started...
 
 ### Clone the repository
 
