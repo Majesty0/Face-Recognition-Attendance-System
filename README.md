@@ -310,14 +310,15 @@ F1 Score  : 96.73%
 
 ---
 
-# Installation
 
-Clone the repository.
+
+## Getting Started
+
+### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Face-Recognition-Attendance-System.git
+git clone https://github.com/Majesty0/Face-Recognition-Attendance-System.git
 ```
-
 Navigate into the project.
 
 ```bash
@@ -335,7 +336,7 @@ Run the desktop application.
 ```bash
 python dashboard.py
 ```
-
+If you plan to contribute to the project and do not have write access, first fork the repository on GitHub, then clone your fork and submit a pull request with your changes.
 ---
 
 # Future Improvements
