@@ -126,10 +126,34 @@ Face-Recognition-Attendance-System/
 │
 └── README.md
 ```
+```text
+# Project Structure
 
+```text
+Face-Recognition-Attendance-System/
+│
+├── assets/                     # Logos, icons, and GUI resources
+├── attendance/                 # Attendance records and attendance manager
+├── controller/                 # Application controllers and backend logic
+├── data/                       # Student records, extracted features, and datasets
+├── dataset/                    # Face image datasets used for training
+├── gui/                        # Desktop graphical user interface components
+├── haarcascade/                # Haar Cascade XML classifier files
+├── models/                     # Trained machine learning models
+├── reports/                    # Evaluation results, figures, and project report
+├── src/                        # Main source code modules
+├── structure/                  # Project architecture and design resources
+│
+├── README.md                   # Project documentation
+├── config.json                 # System configuration settings
+├── developmentStructure.md     # Development workflow documentation
+└── requirements.txt            # Python project dependencies
+```
 ---
 
 # Computer Vision Pipeline
+> <img width="975" height="650" alt="image" src="https://github.com/user-attachments/assets/733b88ac-b9e9-45e4-bc3e-3d058e5c3200" />
+
 
 ## 1. Image Acquisition
 
@@ -230,13 +254,13 @@ Performance is evaluated using standard machine learning metrics:
 ```
 CUSTOM MODEL PERFORMANCE
 
-Training Samples : 280
-Testing Samples  : 70
+Training Samples : 360
+Testing Samples  : 90
 
-Accuracy  : 97.14%
-Precision : 97.40%
-Recall    : 97.14%
-F1 Score  : 97.05%
+Accuracy  : 96.67%
+Precision : 97.44%
+Recall    : 96.67%
+F1 Score  : 96.73%
 ```
 
 ---
@@ -245,37 +269,44 @@ F1 Score  : 97.05%
 
 ## Dashboard
 
-> *(Insert Screenshot)*
+> *<img width="975" height="506" alt="image" src="https://github.com/user-attachments/assets/cc15153d-24c4-44cb-87a6-05f7feda516c" />*
 
 ---
 
 ## Student Registration
-
-> *(Insert Screenshot)*
+> <img width="975" height="760" alt="image" src="https://github.com/user-attachments/assets/0ef1d973-d77f-41d8-b7f8-7c6e4d6cb45c" />
+---
+## Image Capture
+> <img width="829" height="652" alt="image" src="https://github.com/user-attachments/assets/3612ced5-a64c-4537-8b70-d6f3bcc5f764" />
 
 ---
 
 ## Model Training
 
-> *(Insert Screenshot)*
+> <img width="1139" height="639" alt="image" src="https://github.com/user-attachments/assets/faa713ed-87a8-4834-aaec-d6d4b964f6c3" />
+
 
 ---
 
 ## Face Recognition
 
-> *(Insert Screenshot)*
+> <img width="975" height="773" alt="image" src="https://github.com/user-attachments/assets/c58be538-dd10-4376-8767-59d0d2c6e9bb" />
+
 
 ---
 
 ## Attendance Records
 
-> *(Insert Screenshot)*
+> <img width="975" height="475" alt="image" src="https://github.com/user-attachments/assets/dd00b232-3cf4-4a3b-b24e-11b9cd43d2aa" />
+
 
 ---
 
 ## Model Evaluation
 
-> *(Insert Confusion Matrix)*
+> <img width="1041" height="764" alt="image" src="https://github.com/user-attachments/assets/6db81f08-b985-4bba-8080-f313d620fd62" />
+> <img width="975" height="609" alt="image" src="https://github.com/user-attachments/assets/9cd9b419-b4fb-4977-85d0-bc517c33ebee" />
+
 
 ---
 
