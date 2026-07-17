@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 import joblib
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DATASET_PATH = PROJECT_ROOT / "dataset" / "ORL"
+DATASET_PATH = PROJECT_ROOT / "dataset" / "custom"
 MODELS_PATH = PROJECT_ROOT / "models"
 
 HAAR_PATH = PROJECT_ROOT / "haarcascade" / "haarcascade_frontalface_default.xml"

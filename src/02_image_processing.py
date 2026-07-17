@@ -19,7 +19,7 @@ import cv2
 # Paths
 # -------------------------------------------------------
 
-PROCESSED_PATH = PROJECT_ROOT / "dataset" / "processed"
+PROCESSED_PATH = PROJECT_ROOT / "dataset" / "cropped"
 
 PROCESSED_PATH.mkdir(parents=True, exist_ok=True)
 
